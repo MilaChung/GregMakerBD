@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    
+        <link rel="stylesheet" href="style.css">
+        <title> Greg Maker </title>
+    </head>
+    <body>
+
+        <div id="conteudo">
+
+        <div class="caixa">
+            <h1>Greg Maker</h1>
+            <h3>Banco de Dados</h3>
+            <input type="text" id="nomeUsuario" placeholder="Adicione o seu nome de usuário">
+            <br>
+            <br>
+            <h4>Escolha o arquivo para enviar para o banco de dados, pegue ele e teste clicando nas teclas direcionais</h4>
+            <div class="subcaixa">
+            <span class="span">
+                <img id="img1" src="https://www.pngkit.com/png/full/103-1039705_small-arrow-up-comments-icon-arrow-up-svg.png">
+            </span>
+            <label for="arquivoCima">Escolher Arquivo</label>
+            <input  type="file" id="arquivoCima">
+            <audio id="audioCima"></audio>
+            <button id="enviarCima">Enviar Arquivo Cima para o Banco de Dados</button>
+            <button id="pegarArquivoCima">Pegar Arquivo Cima</button>
+            </div>
+            <br>
+            <div class="subcaixa">
+            <span class="span">
+                <img id="img2" src="https://www.pngkit.com/png/full/103-1039755_general-purpose-small-arrow-scroll-down-arrow-svg.png">
+            </span>
+            <label for="arquivoBaixo">Escolher Arquivo</label>
+            <input  type="file" id="arquivoBaixo">
+            <audio id="audioBaixo"></audio>
+            <button id="enviarBaixo">Enviar Arquivo Baixo para o Banco de Dados</button>
+            <button id="pegarArquivoBaixo">Pegar Arquivo Baixo</button>
+            </div>
+            <p id="carregando"></p>
+            <progress value="0" max="100" id="progresso"></progress>
+
+            <h4 id="testeCima"></h4>
+            <h4 id="testeBaixo"></h4>
+        </div>
+        </div>
+
+        <!--Firebase-->
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>        
